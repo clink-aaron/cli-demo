@@ -5,10 +5,9 @@ services:
     image: cli-demo
     build: .
     working_dir: /app
-
-    # environment:
-    #   TWILIO_AUTH_TOKEN: secret
-    #   TWILIO_ACCOUNT_SID: ACxxx
+    environment:
+      TWILIO_AUTH_TOKEN: ${TWILIO_AUTH_TOKEN}
+      TWILIO_ACCOUNT_SID: ${TWILIO_ACCOUNT_SID}
     ports:
       - "3000:3000"
     volumes:
