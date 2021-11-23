@@ -10,5 +10,6 @@ services:
       TWILIO_ACCOUNT_SID: ${TWILIO_ACCOUNT_SID}
     ports:
       - "3000:3000"
+      - "3100:3100"
     volumes:
       - ./:/app
