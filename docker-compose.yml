@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  demo:
+    image: cli-demo
+    build: .
+    working_dir: /app
+
+    # environment:
+    #   TWILIO_AUTH_TOKEN: secret
+    #   TWILIO_ACCOUNT_SID: ACxxx
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app
